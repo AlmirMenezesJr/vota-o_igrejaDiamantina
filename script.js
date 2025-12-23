@@ -40,12 +40,12 @@ function mostrarVotacao() {
   const tela = document.getElementById("tela");
 
   if (etapa === 1) {
-    titulo.innerText = "Votação Patrimônio 2026–2027";
+    titulo.innerText = "Patrimônio 2026–2027";
     tela.innerText = "Votação Para o Patrimônio";
   }
 
   if (etapa === 2) {
-    titulo.innerText = "Votação DEM 2026";
+    titulo.innerText = "DEM 2026";
     tela.innerText = "Votação para o DEM";
   }
 }
@@ -78,7 +78,7 @@ function enviarVotos() {
   }).then(() => {
     tela.innerText =
       "VOTOS REGISTRADOS COM SUCESSO!\n\nAguardando próximo eleitor...";
-    setTimeout(iniciar, 3000);
+    setTimeout(iniciar, 100);
   });
 }
 
@@ -86,3 +86,4 @@ function enviarVotos() {
 document.getElementById("tela").addEventListener("click", () => {
   if (etapa === 0) validarSenha();
 });
+
