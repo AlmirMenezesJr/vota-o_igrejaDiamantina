@@ -1,0 +1,44 @@
+body {
+  background: #1e1e1e;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.urna {
+  background: #e5e5e5;
+  padding: 25px;
+  width: 380px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.tela {
+  background: black;
+  color: #0f0;
+  padding: 18px;
+  margin: 15px 0;
+  font-size: 18px;
+  min-height: 70px;
+  white-space: pre-line;
+}
+
+.botoes button {
+  width: 100%;
+  padding: 14px;
+  margin: 6px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sim { background: green; color: white; }
+.nao { background: red; color: white; }
+.nulo { background: gray; color: white; }

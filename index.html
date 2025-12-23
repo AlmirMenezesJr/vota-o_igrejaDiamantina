@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Urna Eletrônica</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+</head>
+<body>
+
+<div class="urna">
+  <h1 id="titulo"></h1>
+
+  <div class="tela" id="tela"></div>
+
+  <div class="botoes" id="botoes">
+    <button class="sim" onclick="votar('SIM')">SIM</button>
+    <button class="nao" onclick="votar('NÃO')">NÃO</button>
+    <button class="nulo" onclick="votar('NULO')">NULO</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
