@@ -1,8 +1,8 @@
 const FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSeaXaMaIJYTtqtaoFwXIt-IHmmzlItEvHArzGdunkVAtSzDIA/formResponse";
 
-const ENTRY_PATRIMONIO = "entry.2003994318";
-const ENTRY_DEM = "entry.751175476";
+const ENTRY_PATRIMONIO = "entry.751175476";
+const ENTRY_DEM = "entry.1676378611";
 
 const SENHA = "145";
 
@@ -86,4 +86,5 @@ function enviarVotos() {
 document.getElementById("tela").addEventListener("click", () => {
   if (etapa === 0) validarSenha();
 });
+
 
