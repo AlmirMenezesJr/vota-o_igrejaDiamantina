@@ -56,9 +56,9 @@ function votar(opcao) {
   votos[etapa] = opcao;
 
   if (etapa === 1) {
-    etapa = 2;
+    /*etapa = 2;
     mostrarVotacao();
-  } else {
+  } else {*/
     enviarVotos();
   }
 }
@@ -69,7 +69,7 @@ function enviarVotos() {
 
   const formData = new FormData();
   formData.append(ENTRY_PATRIMONIO, votos[1]);
-  formData.append(ENTRY_DEM, votos[2]);
+ /* formData.append(ENTRY_DEM, votos[2]);*/
 
   fetch(FORM_URL, {
     method: "POST",
@@ -86,5 +86,6 @@ function enviarVotos() {
 document.getElementById("tela").addEventListener("click", () => {
   if (etapa === 0) validarSenha();
 });
+
 
 
