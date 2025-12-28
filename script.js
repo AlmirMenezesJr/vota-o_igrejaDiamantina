@@ -4,7 +4,7 @@ const FORM_URL =
 const ENTRY_PATRIMONIO = "entry.751175476";
 const ENTRY_DEM = "entry.1676378611";
 
-const SENHA = "145";
+const SENHA = "1";
 
 let etapa = 0;
 let votos = {};
@@ -86,6 +86,7 @@ function enviarVotos() {
 document.getElementById("tela").addEventListener("click", () => {
   if (etapa === 0) validarSenha();
 });
+
 
 
 
